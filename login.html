@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nghien Cuu Khoa Hoc</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="form-login">
+        <h2>Welcome</h2>
+        <div class= "input-group">
+            <input type="text" id="username" required>
+            <label for="username">Username</label>
+            <div id= "username_error"></div>
+        </div>
+        
+        <div class= "input-group">
+            <input type="password" id="password" required>
+            <label for="password">Password</label>
+            <div id= "password_error"></div>
+        </div>
+        <div id="successfully-login"></div>
+        <button id="btn-login" onclick="validated()">Login</button>
+        <p>Don't have account? <a id='signup' href="#">Sign Up</a> </p>
+    </div>
+    <script src= "valid_login.js"> </script>
+</body>
+</html>
